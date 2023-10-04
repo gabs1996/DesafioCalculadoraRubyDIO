@@ -1,0 +1,44 @@
+loop do
+    
+    print "Escolha uma opção da calculadora: \n 1- SOMA\n 2- SUBTRAÇÃO\n 3- MULTIPLICAÇÃO\n 4- DIVISÃO\n 0- SAIR \n"
+    opcao = gets.chomp.to_i
+    case opcao
+    when 1
+        print "Digite o primeiro número: "
+         n1 = gets.chomp.to_i
+        print "Digite o segundo número: "
+         n2 = gets.chomp.to_i
+        soma = n1 + n2
+            puts "A soma de #{n1} + #{n2} = #{soma}."
+
+    when 2
+        print "Digite o primeiro número: "
+            n1 = gets.chomp.to_i
+        print "Digite o segundo número: "
+            n2 = gets.chomp.to_i
+        subtracao = n1 - n2
+        puts "A subtração de #{n1} - #{n2} = #{subtracao}."
+    
+    when 3
+        print "Digite o primeiro número: "
+            n1 = gets.chomp.to_i
+        print "Digite o segundo número: "
+            n2 = gets.chomp.to_i
+            multiplicacao = n1 * n2
+        puts "A multiplicação de #{n1} * #{n2} = #{multiplicacao}."
+
+    when 4
+    print "Digite o primeiro número: "
+            n1 = gets.chomp.to_i
+    print "Digite o segundo número: "
+            n2 = gets.chomp.to_i
+        divisao = n1 / n2
+    puts "A divisão de #{n1} / #{n2} = #{divisao}."
+
+    when 0
+        print"Obrigado por utilizar a calculadora."
+         break
+    else
+    puts "Opção inválida"
+    end
+end
